@@ -88,83 +88,73 @@
 
 
 
-<!--      <td style="padding:20px;width:75%;vertical-align:middle">-->
-<!--        <a href="https://camp-nerf.github.io/">-->
-<!--          <span class="papertitle">CamP: Camera Preconditioning for Neural Radiance Fields</span>-->
-<!--        </a>-->
-<!--        <br>-->
-<!--        <a href="https://keunhong.com/">Keunhong Park</a>,-->
-<!--        <a href="https://henzler.github.io/">Philipp Henzler</a>,-->
-<!--        <a href="https://bmild.github.io/">Ben Mildenhall</a>,-->
-<!--        <strong>Jonathan T. Barron</strong>,-->
-<!--        <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>-->
-<!--        <br>-->
-<!--        <em>SIGGRAPH Asia</em>, 2023-->
-<!--        <br>-->
-<!--        <a href="https://camp-nerf.github.io/">project page</a>-->
-<!--        /-->
-<!--        <a href="https://arxiv.org/abs/2308.10902">arXiv</a>-->
-<!--        <p></p>-->
-<!--        <p>-->
-<!--        Preconditioning based on camera parameterization helps NeRF and camera extrinsics/intrinsics optimize better together.-->
-<!--        </p>-->
-<!--      </td>-->
-<!--    </tr>-->
+     <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='nuvo_image'>
+<!--              video  160x160  H264-->
+              <video  width=100% muted autoplay loop>
+                  <source src="videos/dreamcar.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+          </div>
+          <img src='images/dreamcar.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function nuvo_start() {
+            document.getElementById('nuvo_image').style.opacity = "1";
+          }
 
-<!--    -->
-<!--      <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()"  bgcolor="#ffffd0">-->
-<!--        <td style="padding:20px;width:25%;vertical-align:middle">-->
-<!--          <div class="one">-->
-<!--            <div class="two" id='zipnerf_image'><video  width=100% height=100% muted autoplay loop>-->
-<!--            <source src="images/zipnerf.mp4" type="video/mp4">-->
-<!--            Your browser does not support the video tag.-->
-<!--            </video></div>-->
-<!--            <img src='images/zipnerf.jpg' width="160">-->
-<!--          </div>-->
-<!--          <script type="text/javascript">-->
-<!--            function zipnerf_start() {-->
-<!--              document.getElementById('zipnerf_image').style.opacity = "1";-->
-<!--            }-->
+          function nuvo_stop() {
+            document.getElementById('nuvo_image').style.opacity = "0";
+          }
+          nuvo_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+           <a href="https://xiaobiaodu.github.io/dreamcar-project/">
+          <span class="papertitle">DreamCar: Leveraging Car-specific Prior for in-the-wild 3D Car Reconstruction</span>
+        </a>
+        <br>
+		<strong>Xiaobiao Du</strong>,
+        <a >Haiyang Sun</a>,
+        <a href="https://lu-m13.github.io/">Ming Lu</a>,
+        <a href="https://bmild.github.io/">Tianqing Zhu</a>
+        <a href="https://sites.google.com/view/xinyus-homepage/Home?authuser=0/">Xin Yu</a>
 
-<!--            function zipnerf_stop() {-->
-<!--              document.getElementById('zipnerf_image').style.opacity = "0";-->
-<!--            }-->
-<!--            zipnerf_stop()-->
-<!--          </script>-->
-<!--        </td>-->
-<!--        <td style="padding:20px;width:75%;vertical-align:middle">-->
-<!--          <a href="http://jonbarron.info/zipnerf">-->
-<!--            <span class="papertitle">Zip-NeRF: Anti-Aliased Grid-Based Neural Radiance Fields</span>-->
-<!--          </a>-->
-<!--          <br>-->
-<!--          <strong>Jonathan T. Barron</strong>,-->
-<!--          <a href="https://bmild.github.io/">Ben Mildenhall</a>,-->
-<!--          <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,-->
-<!--          <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,-->
-<!--          <a href="https://phogzone.com/">Peter Hedman</a>-->
-<!--          <br>-->
-<!--          <em>ICCV</em>, 2023 &nbsp <font color="red"><strong>(Oral Presentation, Best Paper Finalist)</strong></font>-->
-<!--          <br>-->
-<!--          <a href="http://jonbarron.info/zipnerf">project page</a>-->
-<!--          /-->
-<!--          <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a>-->
-<!--          /-->
-<!--          <a href="https://arxiv.org/abs/2304.06706">arXiv</a>-->
-<!--          <p></p>-->
-<!--          <p>-->
-<!--          Combining mip-NeRF 360 and grid-based models like Instant NGP lets us reduce error rates by 8%&ndash;77% and accelerate training by 24x.-->
-<!--          </p>-->
-<!--        </td>-->
-<!--      </tr>-->
-      
-      
+         <br>
+        <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2024
+        <br>
+        <a href="https://xiaobiaodu.github.io/dreamcar-project/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2407.16988">arXiv</a> /
+          <a href="https://github.com/xiaobiaodu/DreamCar">Code</a> &nbsp;
+<a class="github-button" href="https://github.com/xiaobiaodu/DreamCar" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star your-username/your-repository on GitHub">Star</a>
+
+<!-- Include this script tag at the end of your body or in your head. -->
+        <p></p>
+        <p>
+      DreamCar helps you reconstruct a high-quality 3D car model, given only 1-5 images
+        </p>
+      </td>
+    </tr>
 
 
 
+
+
+
+
+
+
+
+<!--     -->
+<!-- miscellanea    -->
+<!--     -->
 
     <hr/>
 
-          
+
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
               <td>
@@ -173,7 +163,7 @@
             </tr>
           </tbody></table>
           <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-            
+
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
               <td width="75%" valign="center">
@@ -185,7 +175,7 @@
               </td>
             </tr>
 
-            
+
 
 
 
@@ -219,4 +209,6 @@
 
     </table>
   </body>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
 </html>
