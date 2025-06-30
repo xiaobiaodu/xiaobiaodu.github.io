@@ -88,6 +88,82 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+<!--3DREALCAR-->
+     <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()"  bgcolor="#ffffd0">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='nuvo_image'>
+<!--              video  160x160  H264-->
+              <video  width=100% muted autoplay loop>
+                  <source src="videos/3drealcar.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+          </div>
+          <img src='images/3drealcar.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function nuvo_start() {
+            document.getElementById('nuvo_image').style.opacity = "1";
+          }
+
+          function nuvo_stop() {
+            document.getElementById('nuvo_image').style.opacity = "0";
+          }
+          nuvo_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+           <a href="https://xiaobiaodu.github.io/3drealcar/">
+          <span class="papertitle">3DRealCar: An In-the-wild RGB-D Car Dataset with 360-degree Views</span>
+        </a>
+        <br>
+		<strong>Xiaobiao Du</strong>,
+        <a href="https://wangyida.github.io/">Yida Wang</a>,
+        <a >Haiyang Sun</a>,
+          <a >Zhuojie Wu</a>,
+          <a >Hongwei Sheng</a>,
+          <a >Shuyun Wang</a>,
+          <a >Jiaying Ying</a>,
+        <a href="https://lu-m13.github.io/">Ming Lu</a>,
+        <a href="https://bmild.github.io/">Tianqing Zhu</a>
+          <a >Kun Zhan</a>,
+        <a href="https://sites.google.com/view/xinyus-homepage/Home?authuser=0/">Xin Yu</a>
+
+         <br>
+        <em>International Conference on Computer Vision (ICCV)</em>, 2025
+        <br>
+        <a href="https://xiaobiaodu.github.io/3drealcar/">project page</a>
+        /
+        <a href="https://arxiv.org/pdf/2406.04875">arXiv</a> /
+          <a href="https://github.com/xiaobiaodu/3DRealCar_Toolkit">Code</a> &nbsp;
+<a class="github-button" href="https://github.com/xiaobiaodu/3DRealCar_Toolkit" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star your-username/your-repository on GitHub">Star</a>
+
+        <p></p>
+        <p>
+      3DRealCar is the first large-scale 360-degree 3D real car dataset.
+        </p>
+      </td>
+    </tr>
+<!--3DREALCAR-->
+
+
+
+
+
+
+
+
+<!--Dreamcar-->
      <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
@@ -170,7 +246,8 @@
 <!--                <a href="https://cvpr.thecvf.com/Conferences/2024/Organizers">Area Chair, CVPR 2024</a>-->
                 <p>Reviewer, CVPR</p>
                 <p>Reviewer, ICLR</p>
-                <p>Reviewer, TCSVT</p>
+                <p>Reviewer, ICCV</p>
+                <p>Reviewer, NIPS</p>
               </td>
             </tr>
 
